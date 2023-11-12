@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+ 
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ 
+header {
+  display: inline;
+}
+ 
+nav {
+  background-color: #ffffff;
+  padding: 11px;
+  position: sticky;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.1);
+
+  
+}
+ 
+nav ul {
+  padding-inline: 4rem; 
+  display: flex;
+  gap: 2rem;
+}
+ 
+nav li {
+  list-style-type: none;
+}
+ 
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+ 
+  color: rgb(0, 0, 0);
+}
+ 
+nav a:hover {
+  font-weight: bold;
+}
+ 
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+ 
+aside {
+  flex: 1;
+}
+ 
+footer {
+  padding: 20px;
+  color: #fff;
+  background-color: #00a2c6;
+}
+ 
+h2 {
+  color: #00a2c6;
+}
+.card-title {
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-title span {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+}
+.card-title span a{
+  text-decoration: none;
+  color: black;
+}
+.card-title span a:hover{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.card-content {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.card-menu {
+  width: 48%;
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 5px;
+  margin: 5px;
+  display: flex;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+
+}
+.card-menu .desc-menu a {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}
+.card-menu .desc-menu a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.image-menu {
+  width: 55%;
+}
+
+.desc-menu {
+  width: 45%;
+ padding-left: 20px;
+ position: relative;
+}
+ 
+h3 {
+  color: #00a2c6;
+}
+ 
+#content {
+  flex: 5;
+ 
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+ 
+.jumbotron {
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.7)
+  ),
+  url('../image/background.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 1);
+  font-size: 20px;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: center;
+  padding: 100px;
+  text-align: center;
+  color: rgb(255, 255, 255); /* Mengatur warna teks menjadi putih */
+}
+
+ 
+.profile header {
+  text-align: center;
+}
+.profile header h2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.profile header .search {
+  padding: 5px;
+  margin-top: 10px;
+  width: 80%;
+  border: 1px solid rgb(183, 180, 180);
+  line-height: 2;
+  
+}
+.profile header input {
+  padding: 5px;
+  border: 1px solid rgb(183, 180, 180);
+}
+.profile header textarea {
+  padding: 5px;
+  border: 1px solid rgb(183, 180, 180);
+  margin-bottom: 10px;
+}
+.profile header button {
+  padding: 10px;
+  border: 1px solid rgb(64, 64, 245);
+  background-color: white;
+  color: rgb(64, 64, 245);
+}
+.profile header button:hover {
+  background-color: rgb(64, 64, 245);;
+  color: white;
+}
+ 
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+ 
+  object-fit: cover;
+  object-position: center;
+}
+ 
+.profile img {
+  width: 200px;
+}
+ 
+.card {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ 
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+  .card-menu {
+    width: 100%;
+  }
+  main aside {
+    align-self: stretch;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+
+  
